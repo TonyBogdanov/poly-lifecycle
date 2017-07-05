@@ -24,11 +24,17 @@
 
         this.notify = function (e) {
             this.fired[e.type] = true;
-            for (var i = 0; i < this.listeners.length; i++) {
-                if (this.hasFired(this.listeners[i][0])) {
-                    this.listeners[i][1]();
+            var listener,
+                listeners = [];
+            while (0 < this.listeners.length) {
+                listener = this.listeners.shift();
+                if (this.hasFired(listener[0])) {
+                    listener[1]();
+                } else {
+                    listeners.push(listener);
                 }
             }
+            this.listeners = listeners;
         };
 
         this.on = function (events, callback) {
