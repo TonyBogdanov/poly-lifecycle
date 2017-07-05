@@ -1,0 +1,17 @@
+{
+  "name": "poly-lifecycle",
+  "homepage": "https://github.com/TonyBogdanov/poly-lifecycle",
+  "authors": [
+    "Tony Bogdanov <tonybogdanov@gmail.com>"
+  ],
+  "description": "Polymer 2.* lifecycle utilities",
+  "main": "poly-lifecycle.min.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
