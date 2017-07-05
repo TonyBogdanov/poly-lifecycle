@@ -5,7 +5,7 @@
     "Tony Bogdanov <tonybogdanov@gmail.com>"
   ],
   "description": "Polymer 2.* lifecycle utilities",
-  "main": "poly-lifecycle.min.js",
+  "main": "poly-lifecycle.js",
   "license": "MIT",
   "ignore": [
     "**/.*",
